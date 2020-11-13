@@ -7,21 +7,31 @@
 
 //dichiaro le mie variabili
 var km, age;
+
 //chiedi il numero di chilometri da percorerre
 var km = Number(prompt("quanti chilometri devi percorrere?"));
-  console.log(km);
+  //console.log(km);
+
 //chiedi età del passeggero
 var age = Number(prompt("quanti anni hai?"));
-  console.log(age);
+  //console.log(age);
 
 //prezzo del biglietto....0.21 € /km
 var priceticket = Number(km * 0.21);
 
+var sconto1 = (priceticket / 100) * 20;
+var sconto2 = (priceticket / 100) * 40;
+
 //condizioni if else.....
 if (age < 18) {
-   alert("Gentile ragazzo il prezzo del tuo biglietto è di") + priceticket - ((priceticket / 100) * 20);
+  alert("Gentile ragazzo il prezzo del tuo biglietto è di") + (priceticket) - (sconto1);
 } else if (age > 64) {
-    alert("Caro Nonnetto il prezzo del tuo biglietto è di") + priceticket - ((priceticket / 100) * 40);
+  alert("Caro Nonnetto il prezzo del tuo biglietto è di") + (priceticket) - (sconto2);
 } else {
-    alert("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
+  alert("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
 }
+
+
+
+//  priceticket = (priceticket - ((priceticket / 100) * 20));
+//priceticket = (priceticket - ((priceticket / 100) * 20));
