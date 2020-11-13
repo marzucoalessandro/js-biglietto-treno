@@ -17,7 +17,7 @@ var age = Number(prompt("quanti anni hai?"));
   //console.log(age);
 
 //prezzo del biglietto....0.21 € /km
-var priceticket = Number(km * 0.21);
+var priceticket = (km * 0.21);
 
 var sconto1 = (priceticket / 100) * 20;
 var sconto2 = (priceticket / 100) * 40;
