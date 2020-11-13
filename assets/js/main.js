@@ -24,9 +24,9 @@ var sconto2 = (priceticket / 100) * 40;
 
 //condizioni if else.....
 if (age < 18) {
-  alert("Gentile ragazzo il prezzo del tuo biglietto è di") + (priceticket) - (sconto1);
+  alert("Gentile ragazzo il prezzo del tuo biglietto è di " + (priceticket - sconto1) + "€");
 } else if (age > 64) {
-  alert("Caro Nonnetto il prezzo del tuo biglietto è di") + (priceticket) - (sconto2);
+  alert("Caro Nonnetto il prezzo del tuo biglietto è di " + (priceticket - sconto2) + "€");
 } else {
   alert("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
 }
