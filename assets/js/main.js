@@ -23,5 +23,5 @@ if (age < 18) {
 } else if (age > 64) {
     alert("Caro Nonnetto il prezzo del tuo biglietto è di") + priceticket - ((priceticket / 100) * 40);
 } else {
-    alert("EEEhh per te niente sconti ...prezzo pieno ....prepara.." + priceticket);
+    alert("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
 }
