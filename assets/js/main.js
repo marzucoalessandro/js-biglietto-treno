@@ -8,7 +8,7 @@
 //dichiaro le mie variabili
 var km, age;
 //chiedi il numero di chilometri da percorerre
-var km = prompt("quanti chilometri devi percorrere?");
+var km = number(prompt("quanti chilometri devi percorrere?"));
 //chiedi età del passeggero
 var age = prompt("quanti anni hai?");
 
@@ -16,3 +16,6 @@ var age = prompt("quanti anni hai?");
 var priceticket = (km * 0.21);
 
 //condizioni if else.....
+if (age < 18) {
+    alert()
+}
