@@ -30,8 +30,13 @@ if (age < 18) {
 } else {
   alert("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
 }
-
-
+if (age < 18) {
+    document.getElementById('prezzo').innerHTML = ("Gentile ragazzo il prezzo del tuo biglietto è di " + (priceticket - sconto1) + "€");
+}  else if (age > 64) {
+    document.getElementById('prezzo').innerHTML = ("Caro Nonnetto il prezzo del tuo biglietto è di " + (priceticket - sconto2) + "€");
+}  else {
+    document.getElementById('prezzo').innerHTML = ("EEEhh per te niente sconti ...prezzo pieno ....prepara " + priceticket + "€");
+}
 
 //  priceticket = (priceticket - ((priceticket / 100) * 20));
 //priceticket = (priceticket - ((priceticket / 100) * 20));
